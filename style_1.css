@@ -1,0 +1,134 @@
+/*<==============================================================================================================================>*/
+/*body + background css: begin*/
+
+* {
+    box-sizing: border-box;
+}
+
+body, html{
+  padding: 0px;
+  margin: 0px;
+  font-family: arial;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background: linear-gradient(-45deg, #6793db, #a1db67, #db9567, #c167db);
+  background-size: 400% 400%;
+  -webkit-animation: rainbow 15s ease infinite;
+  -moz-animation: rainbow 15s ease infinite;
+  animation: rainbow 15s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes rainbow {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes rainbow {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/*body + background css: end*/
+/*<==============================================================================================================================>*/
+
+/*<==============================================================================================================================>*/
+/*input divs: begin*/
+
+.aanmelden_from{
+  margin-top: 100px;
+  margin-left: 600px;
+  margin-right: 600px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: rgba(140,30,60,0.5);
+  text-align: center;
+}
+
+.aanmeld_from{
+  margin-bottom: 10px;
+}
+
+/*input divs: end*/
+/*<==============================================================================================================================>*/
+
+/*<==============================================================================================================================>*/
+/*text + input veld: begin*/
+h1{
+    font-family: inherit;
+    font-size: 200%;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -70px;
+}
+
+h4{
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input{
+  padding: 5px;
+  border-radius: 5px;
+}
+/*text + input veld: end*/
+/*<==============================================================================================================================>*/
+
+/*<==============================================================================================================================>*/
+/*submit: begin*/
+.submit_button{
+  margin-top: 10px;
+  height: 30px;
+  width: 60px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+/*submit: end*/
+/*<==============================================================================================================================>*/
+
+/*<==============================================================================================================================>*/
+/*back link: begin*/
+
+.back_to_home{
+  cursor: pointer;
+  margin: 10px;
+  text-align: left;
+}
+
+.home{
+  color: black;
+}
+
+.home:hover{
+  color: blue;
+}
+
+/*back link: end*/
+/*<==============================================================================================================================>*/
