@@ -208,11 +208,13 @@ h1, h4, a {
 }
 
 .login-button{
+  outline: none;
   margin-top: 10px;
   height: 30px;
   width: 60px;
   border: 1px solid black;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 
@@ -220,12 +222,14 @@ h1, h4, a {
   padding: 10px;
   border: 1px solid black;
   border-radius: 5px;
+  outline: none;
 }
 
 .login_password {
   padding: 10px;
   border: 1px solid black;
   border-radius: 5px;
+  outline: none;
 }
 
 
@@ -234,6 +238,7 @@ h1, h4, a {
   padding-top: 40px;
   cursor:pointer;
   text-decoration:underline;
+
 }
 
 .aanmelden:hover{
@@ -257,11 +262,10 @@ h1, h4, a {
 
 
 #cell_R1,#cell_R2,#cell_R3,#cell_R4,#cell_R5,#cell_R6,#cell_R7,#cell_R8,#cell_R9,#cell_R10,#cell_R11,#cell_R12,#cell_R13,#cell_R14,#cell_R15,#cell_R16,#cell_R17,#cell_R18,#cell_R19,#cell_R20,#cell_R21,#cell_R22,#cell_R23,#cell_R24,#cell_R25,#cell_R26,#cell_R27,#cell_R28,#cell_R29,#cell_R30,#cell_R31,#cell_R32 {
-    overflow: hidden;
     padding: 10px;
     width:100px;
     height:100px;
-    border:0px solid black;
+    border: 0px solid black;
     float: left;
 }
 
@@ -269,47 +273,130 @@ h1, h4, a {
 /*<==============================================================================================================================>*/
 
 /*<==============================================================================================================================>*/
-/*fadeout animation: begin*/
+/*heen en weer animation: begin*/
 
-.fade_out{
-  animation: fadeOut 3s;
-  animation-iteration-count: 1;
-  animation-delay: 2s;
+
+.heen_en_weer {
+    margin-right: -60px;
+    animation: heenEnWeer ease-in-out 3s infinite alternate;
+    transform-origin: center 0px;
+    float: right;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 
-@keyframes fadeOut {
-
-  from{
-    opacity: 1;
-  }
-
-  to{
-    opacity: 0;
-  }
-
+.heen_en_weer img {
+    border: 3px solid black;
+    display: block;
 }
-/*fadeout animation: end*/
+.heen_en_weer:after{
+    content: '';
+    position: absolute;
+    width: 20px; height: 20px;
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+
+
+.heen_en_weer_2 {
+    margin-right: -60px;
+    animation: heenEnWeer ease-in-out 2s infinite alternate;
+    transform-origin: center 0px;
+    float: right;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.heen_en_weer_2 img {
+    border: 3px solid black;
+    display: block;
+}
+.heen_en_weer_2:after{
+    content: '';
+    position: absolute;
+    width: 20px; height: 20px;
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+.heen_en_weer_3 {
+    margin-right: -60px;
+    animation: heenEnWeer ease-in-out 1s infinite alternate;
+    transform-origin: center 0px;
+    float: right;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.heen_en_weer_3 img {
+    border: 3px solid black;
+    display: block;
+}
+.heen_en_weer_3:after{
+    content: '';
+    position: absolute;
+    width: 20px; height: 20px;
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+
+@keyframes heenEnWeer {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+/*swing animation: begin*/
 /*<==============================================================================================================================>*/
 
 /*<==============================================================================================================================>*/
-/*slideup animation: begin*/
-.slide_up_1{
-  animation: slideUp1 3s 1;
-  animation-delay: 5s;
-  animation-direction: reverse;
-}
+/*tablet responsive: begin*/
 
-@keyframes slideUp1 {
-
-  from{
-    transform: translateY(100px, 0);
+@media screen and (max-width: 1240px) {
+  .right{
+    visibility: hidden;
   }
 
-  to{
-    transform: translateY(100px);
+  .left{
+    margin-left: -620px;
   }
+}
+/*tablet responsive: end*/
+/*<==============================================================================================================================>*/
+
+/*<==============================================================================================================================>*/
+/*phone responsive: begin*/
+
+@media screen and (max-width: 640px) {
+  .right{
+    visibility: hidden;
+  }
+.header-animation{
+    right: -15%;
+}
 
 }
 
-/*slideup animation: end*/
+@media screen and (max-width: 640px) {
+  .left{
+
+    margin-left: -920px;
+  }
+}
+
+@media screen and (max-width:320px) {
+
+}
+
+/*phone responsive: end*/
 /*<==============================================================================================================================>*/
